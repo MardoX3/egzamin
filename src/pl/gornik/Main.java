@@ -17,5 +17,8 @@ public class Main {
         System.out.println("======================");
         System.out.println("Podaj prefix");
         System.out.println(util.countWordsStartPrefix(stringBuilder,scanner.nextLine()));
+        System.out.println("======================");
+        System.out.println("Podaj dlugosc");
+        System.out.println(util.countSizeOfWords(stringBuilder,scanner.nextLine()));
     }
 }
