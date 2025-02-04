@@ -6,7 +6,7 @@ public class Util {
         return words.length;
     }
     public int countWordsStartPrefix(StringBuilder text, String prefix) {
-        String[] words = text.toString().split("");
+        String[] words = text.toString().split(" ");
         int count = 0;
         for (String word : words) {
             if (word.startsWith(prefix)) {

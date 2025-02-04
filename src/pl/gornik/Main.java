@@ -1,8 +1,10 @@
 package pl.gornik;
 
 import java.io.IOException;
+import java.util.Scanner;
 
 public class Main {
+    public static Scanner;
     public static void main(String[] args) throws IOException {
         FileRead fileReader = new FileRead();
         StringBuilder stringBuilder;
@@ -13,6 +15,6 @@ public class Main {
         int numberOfWords = util.countWords(stringBuilder);
         System.out.println("liczba wyrazow w tekscie "+numberOfWords);
         System.out.println("======================");
-        System.out.println(util.countWordsStartPrefix(stringBuilder,"."));
+        System.out.println(util.countWordsStartPrefix(stringBuilder,"t"));
     }
 }
