@@ -19,7 +19,7 @@ public class Util {
         String[] words = text.toString().split(" ");
         int count= 0;
         for (String word : words) {
-                if(word.split("").length == (6-1)) {
+                if(word.split("").length == 6) {
                     System.out.println(word);
                     count++;
                 }
