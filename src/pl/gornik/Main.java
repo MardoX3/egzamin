@@ -4,8 +4,8 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
-    public static Scanner;
     public static void main(String[] args) throws IOException {
+        Scanner scanner = new Scanner(System.in);
         FileRead fileReader = new FileRead();
         StringBuilder stringBuilder;
         stringBuilder = fileReader.readFile("src/pl/gornik/file.txt");
@@ -15,6 +15,7 @@ public class Main {
         int numberOfWords = util.countWords(stringBuilder);
         System.out.println("liczba wyrazow w tekscie "+numberOfWords);
         System.out.println("======================");
-        System.out.println(util.countWordsStartPrefix(stringBuilder,"t"));
+        System.out.println("Podaj prefix");
+        System.out.println(util.countWordsStartPrefix(stringBuilder,scanner.nextLine()));
     }
 }
