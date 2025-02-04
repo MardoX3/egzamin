@@ -15,11 +15,11 @@ public class Util {
         }
         return count;
     }
-    public int countSizeOfWords(StringBuilder text, String size){
+    public int countSizeOfWords(StringBuilder text, int size){
         String[] words = text.toString().split(" ");
         int count= 0;
         for (String word : words) {
-                if(word.split("").length == 6) {
+                if(word.split("").length == size) {
                     System.out.println(word);
                     count++;
                 }
